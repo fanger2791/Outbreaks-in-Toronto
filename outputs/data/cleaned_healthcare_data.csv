@@ -1,85 +1,85 @@
-"X_id","Institution.Name","Institution.Address","Outbreak.Setting","Type.of.Outbreak","Causative.Agent.1","Causative.Agent.2","Date.Outbreak.Began","Date.Declared.Over","Active"
-1,"Amica On the Avenue","1066 Ave Rd","Retirement Home","Respiratory","COVID-19","","2024-01-17",NA,TRUE
-2,"UHN Toronto Rehabilitation Institue - Bickle Centre - N3","130 Dunn Ave","Hospital-Chronic Care","Respiratory","Influenza A (Not subtyped)","","2024-01-17",NA,TRUE
-3,"Fairview Nursing Home","14 Cross St","LTCH","Respiratory","Pending","","2024-01-16",NA,TRUE
-4,"Hellenic Home - Unit 2B","2411 Lawrence Ave E","LTCH","Respiratory","COVID-19","","2024-01-16",NA,TRUE
-5,"Hillcrest Reactivation Centre - 3rd Fl","47 Austin Terr","Hospital-Chronic Care","Enteric","Pending","","2024-01-16",NA,TRUE
-6,"SHSC - Sunnybrook Veterans Centre - LDMH","2075 Bayview Ave","LTCH","Enteric","Pending","","2024-01-16",NA,TRUE
-7,"Toronto East Health Network - Michael Garron Hospital - B3","825 Coxwell Ave","Hospital-Acute Care","Respiratory","COVID-19","","2024-01-16",NA,TRUE
-8,"Centre For Addiction and Mental Health - Queen Street Site - GAUB","1001 Queen St West","Hospital-Psychiatric","Respiratory","COVID-19","","2024-01-15",NA,TRUE
-9,"Cheltenham Care Community - 1st Fl","5935 Bathrust St","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-15",NA,TRUE
-10,"Hazelton Place Retirement Residence - 2nd Fl","111 Ave Rd","LTCH","Respiratory","COVID-19","","2024-01-15",NA,TRUE
-11,"West Park Long Term Care Centre - Weston & Mulholland","82 Buttonwood Ave","LTCH","Respiratory","COVID-19","","2024-01-15",NA,TRUE
-12,"Baycrest Hospital - 4 West","3560 Bathurst St","Hospital-Chronic Care","Respiratory","Respiratory syncytial virus","","2024-01-14",NA,TRUE
-13,"Copernicus Lodge - 2N & 2S","66 Roncesvalles Ave","LTCH","Respiratory","COVID-19","","2024-01-13",NA,TRUE
-14,"St. George Care Community - 1st Fl","225 St. George St","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-13",NA,TRUE
-15,"Donway Place","8 The Donway E","Retirement Home","Respiratory","COVID-19","","2024-01-12",NA,TRUE
-16,"Hellenic Care for Seniors - Ground Fl","215 Tyrrel Ave","LTCH","Respiratory","COVID-19","","2024-01-12",NA,TRUE
-17,"St. Peter & Paul Residence - 4th Fl","221 Milner Ave","LTCH","Enteric","Pending","","2024-01-12",NA,TRUE
-18,"Castleview Wychwood Towers - 3rd Fl","351 Christie St","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-11",NA,TRUE
-19,"Fieldstone Commons Care Community - 4A","1000 Ellesmere Rd","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-11",NA,TRUE
-20,"Mon Sheong Scarborough Long Term Care Centre - 2S","2030 McNicoll Ave","LTCH","Respiratory","COVID-19","","2024-01-11",NA,TRUE
-21,"Reactivation Care Centre - Finch Site - Humber River Hospital - 6 East","2111 Finch Ave W","Hospital-Chronic Care","Respiratory","Pending","","2024-01-11",NA,TRUE
-22,"Seven Oaks - 2nd & 5th Fl","9 Nielson Road","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-11",NA,TRUE
-23,"The Jewish Home for the Aged - 3EI","3560 Bathurst St","LTCH","Respiratory","COVID-19","","2024-01-11",NA,TRUE
-24,"The Russell Hill Retirement Residence","262 St. Clair Ave W","Retirement Home","Respiratory","COVID-19","","2024-01-11",NA,TRUE
-25,"Unity Health Toronto - Providence - A4","3276 St. Clair Ave East","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-11",NA,TRUE
-26,"Weston Terrace - 2nd Fl B Wing","2005 Lawrence Ave W","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-11",NA,TRUE
-27,"Scarborough Health Network - General Hospital - T7","3050 Lawrence Ave E","Hospital-Acute Care","Respiratory","Respiratory syncytial virus","","2024-01-10",NA,TRUE
-28,"Toronto East Health Network - Atrium at Kew Beach - 2W","500 Kingston Rd","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-10","2024-01-17",FALSE
-29,"Toronto East Health Network - Michael Garron Hospital - MCU","825 Coxwell Ave","Hospital-Acute Care","Respiratory","COVID-19","","2024-01-10",NA,TRUE
-30,"Ukrainian Canadian Care Centre - 2nd Fl","60 Richview Rd","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-10","2024-01-16",FALSE
-31,"University Health Network - Toronto Western - 4B","399 Bathurst St","Hospital-Acute Care","Respiratory","COVID-19","","2024-01-10",NA,TRUE
-32,"Castleview Wychwood Towers - 2 West","351 Christie St","LTCH","Respiratory","COVID-19","","2024-01-09",NA,TRUE
-33,"Delmanor Northtown Retirement Home - 4th, 5th, 6th & 8th Fl","5351 Yonge St","Retirement Home","Respiratory","Influenza A","","2024-01-09",NA,TRUE
-34,"Hawthorne Place Care Centre - 1st Fl Convalescent Unit","2045 Finch Ave W","LTCH","Respiratory","COVID-19","","2024-01-09",NA,TRUE
-35,"Kingsway - 2nd Fl (Memory Unit)","4251 Dundas St W","LTCH","Respiratory","COVID-19","","2024-01-09","2024-01-17",FALSE
-36,"McCall Centre for Continuing Care - 3rd Fl","150 Sherway Dr","Hospital-Chronic Care","Respiratory","Influenza A (Not subtyped)","Parainfluenza, Rhinovirus","2024-01-09",NA,TRUE
-37,"RCC Mackenzie Health - Finch Site - 4 East","2111 Finch Ave W","Hospital-Chronic Care","Respiratory","Influenza A (Not subtyped)","","2024-01-09",NA,TRUE
-38,"Trilogy Long Term Care - 5th Fl","340 McCowan Rd","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-09",NA,TRUE
-39,"Carefree Lodge - 1st Fl","306 Finch Ave E","LTCH","Respiratory","COVID-19","","2024-01-08",NA,TRUE
-40,"Extendicare Guildwood - East - Spurs 2","60 Guildwood Pky","LTCH","Respiratory","Coronavirus*","","2024-01-08",NA,TRUE
-41,"Glen Rouge Community - 4th Fl","92 Island Rd","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-08",NA,TRUE
-42,"Kennedy Lodge - 2 North & 2 South","1400 Kennedy Rd","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-08",NA,TRUE
-43,"One Kenton Place - 3rd Fl","1-3 Kenton Dr","LTCH","Respiratory","COVID-19","","2024-01-08","2024-01-11",FALSE
-44,"Runnymede Healthcare Centre - 3W","625 Runnymede Rd","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-08","2024-01-16",FALSE
-45,"Yee Hong Centre for Geriatric Care - 2nd Fl","311 McNicoll Ave","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-08",NA,TRUE
-46,"Westside - 4th Fl","1145 Albion Rd","LTCH","Respiratory","COVID-19","","2024-01-07","2024-01-16",FALSE
-47,"Downsview Long Term Care Centre - Unit 2E & 1 North","3595 Keele St","LTCH","Respiratory","COVID-19","","2024-01-06",NA,TRUE
-48,"Isabel and Arthur Meighen Manor - 3rd Fl","155 Millwood Rd","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-06","2024-01-11",FALSE
-49,"Sunnybrook Health Sciences Centre - Sunnybrook Veterans Centre - LSSE","2075 Bayview Ave","LTCH","Respiratory","COVID-19","","2024-01-06",NA,TRUE
-50,"Chartwell Scarlett Heights Retirement Residence","4005 Eglinton Ave W","LTCH","Respiratory","COVID-19","","2024-01-05",NA,TRUE
-51,"Humber Meadows Long Term Care Home - 4 North & 6 South","2109 Finch Ave W","LTCH","Respiratory","COVID-19","","2024-01-05",NA,TRUE
-52,"Shsc - Sunnybrook Veterans Centre - LFSW","2075 Bayview Ave","LTCH","Enteric","Norovirus","","2024-01-05","2024-01-17",FALSE
-53,"St. Bernard's Residence - 3rd Fl","685 Finch Ave W","Retirement Home","Respiratory","COVID-19","","2024-01-05",NA,TRUE
-54,"Unity Health Toronto - St. Joseph's - 6G","30 The Queensway","Hospital-Acute Care","Respiratory","COVID-19","","2024-01-05","2024-01-16",FALSE
-55,"Villa Colombo Homes for the Aged","40 Playfair Ave","LTCH","Respiratory","COVID-19","","2024-01-05","2024-01-13",FALSE
-56,"Weston Gardens Retirement Residence - 3rd, 4th & 5th Fl","303 Queens Dr","Retirement Home","Respiratory","COVID-19","","2024-01-05",NA,TRUE
-57,"Cummer Lodge - 2S","205 Cummer Ave","LTCH","Respiratory","COVID-19","","2024-01-04",NA,TRUE
-58,"Fountainview Care Community - 2nd Fl Unit 2B","1800 O'Connor Dr","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-04",NA,TRUE
-59,"Harold & Grace Baker Centre - Unit C","1 Northwestern Ave","LTCH","Respiratory","Respiratory syncytial virus","","2024-01-04",NA,TRUE
-60,"Lakeside - 2nd Fl & 3rd Fl Robin House","150 Dunn Ave","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-04",NA,TRUE
-61,"Runnymede Healthcare Centre - 4W","625 Runnymede Rd","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-04","2024-01-16",FALSE
-62,"The Jewish Home for the Aged - 6GS","3560 Bathurst St","LTCH","Respiratory","COVID-19","","2024-01-04","2024-01-13",FALSE
-63,"The Wexford - 2nd Fl","1860 Lawrence Ave E","LTCH","Respiratory","COVID-19","","2024-01-04","2024-01-13",FALSE
-64,"Villa Colombo Homes for the Aged","40 Playfair Ave","LTCH","Respiratory","Pending","","2024-01-04",NA,TRUE
-65,"Weston Gardens - Transitional Care Unit - 3rd Fl","303 Queens Dr","LTCH","Respiratory","COVID-19","","2024-01-04","2024-01-11",FALSE
-66,"Belmont House - 2 East","55 Belmont St","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-03","2024-01-10",FALSE
-67,"Eatonville Care Centre","420 The East Mall","LTCH","Respiratory","COVID-19","","2024-01-03",NA,TRUE
-68,"Sage Care Retirement Home - 2nd Fl D Pod & 3rd Fl D Pod","147 Elder St","Retirement Home","Respiratory","COVID-19","","2024-01-03","2024-01-16",FALSE
-69,"Shepherd Lodge - 7th Fl South & 2 North","3760 Sheppard Ave East","LTCH","Respiratory","COVID-19","","2024-01-03",NA,TRUE
-70,"The O'Neill Centre - 5th Fl","33 Christie St","LTCH","Respiratory","COVID-19","","2024-01-03","2024-01-15",FALSE
-71,"Weston Terrace Care Community - Unit 4B","2005 Lawrence Ave W","LTCH","Respiratory","COVID-19","","2024-01-03","2024-01-09",FALSE
-72,"Yee Hong Centre - Scarborough McNicoll - 2nd, 4th & 5th Fl","2311 Mcnicoll Ave","LTCH","Respiratory","COVID-19","","2024-01-03",NA,TRUE
-73,"Baycrest Hospital - H5W","3560 Bathurst St","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-02","2024-01-10",FALSE
-74,"Centre For Addiction and Mental Health - PRT7","1001 Queen St West","Hospital-Psychiatric","Respiratory","COVID-19","","2024-01-02","2024-01-15",FALSE
-75,"Extendicare Bayview - East Unit","550 Cummer Ave","LTCH","Respiratory","Influenza A (Not subtyped)","","2024-01-02","2024-01-04",FALSE
-76,"Humber Valley Terrace - 1st Fl","95 Humber College Blvd","LTCH","Respiratory","COVID-19","","2024-01-02","2024-01-09",FALSE
-77,"The Claremont - 3rd & 7th Fl","305 Balliol St","Retirement Home","Respiratory","COVID-19","","2024-01-02",NA,TRUE
-78,"The Jewish Home for the Aged - 2GS","3560 Bathurst St","LTCH","Respiratory","COVID-19","","2024-01-02","2024-01-15",FALSE
-79,"The Jewish Home for the Aged - 5EI","3560 Bathurst St","LTCH","Respiratory","COVID-19","","2024-01-02","2024-01-10",FALSE
-80,"The Village of Humber Heights - Alderwood","2245 Lawrence Ave W","LTCH","Respiratory","COVID-19","","2024-01-02","2024-01-15",FALSE
-81,"Unity Health Toronto - Houses of Providence - D3","3276 St Clair Ave E","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-02","2024-01-13",FALSE
-82,"Unity Health Toronto - RCC Church - 4B","200 Church St","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-02","2024-01-10",FALSE
-83,"Unity Health Toronto - St. Michael's Hospital - 7CCN","30 Bond St","Hospital-Acute Care","Enteric","Clostridium difficile","","2024-01-02",NA,TRUE
-84,"West Park  Healthcare Centre - 2EC","82 Buttonwood Ave","Hospital-Chronic Care","Respiratory","COVID-19","","2024-01-02","2024-01-09",FALSE
+"ID","Name","Address","Setting","Type","Causative1","DateBegan","DateEnded","Active"
+"1","Amica On The Avenue","1066 Ave Rd","Retirement Home","Respiratory","Covid-19","2024-01-17",NA,TRUE
+"2","Uhn Toronto Rehabilitation Institue - Bickle Centre - N3","130 Dunn Ave","Hospital-Chronic Care","Respiratory","Influenza A (Not Subtyped)","2024-01-17",NA,TRUE
+"3","Fairview Nursing Home","14 Cross St","Ltch","Respiratory","Pending","2024-01-16",NA,TRUE
+"4","Hellenic Home - Unit 2b","2411 Lawrence Ave E","Ltch","Respiratory","Covid-19","2024-01-16",NA,TRUE
+"5","Hillcrest Reactivation Centre - 3rd Fl","47 Austin Terr","Hospital-Chronic Care","Enteric","Pending","2024-01-16",NA,TRUE
+"6","Shsc - Sunnybrook Veterans Centre - Ldmh","2075 Bayview Ave","Ltch","Enteric","Pending","2024-01-16",NA,TRUE
+"7","Toronto East Health Network - Michael Garron Hospital - B3","825 Coxwell Ave","Hospital-Acute Care","Respiratory","Covid-19","2024-01-16",NA,TRUE
+"8","Centre For Addiction And Mental Health - Queen Street Site - Gaub","1001 Queen St West","Hospital-Psychiatric","Respiratory","Covid-19","2024-01-15",NA,TRUE
+"9","Cheltenham Care Community - 1st Fl","5935 Bathrust St","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-15",NA,TRUE
+"10","Hazelton Place Retirement Residence - 2nd Fl","111 Ave Rd","Ltch","Respiratory","Covid-19","2024-01-15",NA,TRUE
+"11","West Park Long Term Care Centre - Weston & Mulholland","82 Buttonwood Ave","Ltch","Respiratory","Covid-19","2024-01-15",NA,TRUE
+"12","Baycrest Hospital - 4 West","3560 Bathurst St","Hospital-Chronic Care","Respiratory","Respiratory Syncytial Virus","2024-01-14",NA,TRUE
+"13","Copernicus Lodge - 2n & 2s","66 Roncesvalles Ave","Ltch","Respiratory","Covid-19","2024-01-13",NA,TRUE
+"14","St. George Care Community - 1st Fl","225 St. George St","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-13",NA,TRUE
+"15","Donway Place","8 The Donway E","Retirement Home","Respiratory","Covid-19","2024-01-12",NA,TRUE
+"16","Hellenic Care For Seniors - Ground Fl","215 Tyrrel Ave","Ltch","Respiratory","Covid-19","2024-01-12",NA,TRUE
+"17","St. Peter & Paul Residence - 4th Fl","221 Milner Ave","Ltch","Enteric","Pending","2024-01-12",NA,TRUE
+"18","Castleview Wychwood Towers - 3rd Fl","351 Christie St","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-11",NA,TRUE
+"19","Fieldstone Commons Care Community - 4a","1000 Ellesmere Rd","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-11",NA,TRUE
+"20","Mon Sheong Scarborough Long Term Care Centre - 2s","2030 Mcnicoll Ave","Ltch","Respiratory","Covid-19","2024-01-11",NA,TRUE
+"21","Reactivation Care Centre - Finch Site - Humber River Hospital - 6 East","2111 Finch Ave W","Hospital-Chronic Care","Respiratory","Pending","2024-01-11",NA,TRUE
+"22","Seven Oaks - 2nd & 5th Fl","9 Nielson Road","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-11",NA,TRUE
+"23","The Jewish Home For The Aged - 3ei","3560 Bathurst St","Ltch","Respiratory","Covid-19","2024-01-11",NA,TRUE
+"24","The Russell Hill Retirement Residence","262 St. Clair Ave W","Retirement Home","Respiratory","Covid-19","2024-01-11",NA,TRUE
+"25","Unity Health Toronto - Providence - A4","3276 St. Clair Ave East","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-11",NA,TRUE
+"26","Weston Terrace - 2nd Fl B Wing","2005 Lawrence Ave W","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-11",NA,TRUE
+"27","Scarborough Health Network - General Hospital - T7","3050 Lawrence Ave E","Hospital-Acute Care","Respiratory","Respiratory Syncytial Virus","2024-01-10",NA,TRUE
+"28","Toronto East Health Network - Atrium At Kew Beach - 2w","500 Kingston Rd","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-10","2024-01-17",FALSE
+"29","Toronto East Health Network - Michael Garron Hospital - Mcu","825 Coxwell Ave","Hospital-Acute Care","Respiratory","Covid-19","2024-01-10",NA,TRUE
+"30","Ukrainian Canadian Care Centre - 2nd Fl","60 Richview Rd","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-10","2024-01-16",FALSE
+"31","University Health Network - Toronto Western - 4b","399 Bathurst St","Hospital-Acute Care","Respiratory","Covid-19","2024-01-10",NA,TRUE
+"32","Castleview Wychwood Towers - 2 West","351 Christie St","Ltch","Respiratory","Covid-19","2024-01-09",NA,TRUE
+"33","Delmanor Northtown Retirement Home - 4th, 5th, 6th & 8th Fl","5351 Yonge St","Retirement Home","Respiratory","Influenza A","2024-01-09",NA,TRUE
+"34","Hawthorne Place Care Centre - 1st Fl Convalescent Unit","2045 Finch Ave W","Ltch","Respiratory","Covid-19","2024-01-09",NA,TRUE
+"35","Kingsway - 2nd Fl (Memory Unit)","4251 Dundas St W","Ltch","Respiratory","Covid-19","2024-01-09","2024-01-17",FALSE
+"36","Mccall Centre For Continuing Care - 3rd Fl","150 Sherway Dr","Hospital-Chronic Care","Respiratory","Influenza A (Not Subtyped)","2024-01-09",NA,TRUE
+"37","Rcc Mackenzie Health - Finch Site - 4 East","2111 Finch Ave W","Hospital-Chronic Care","Respiratory","Influenza A (Not Subtyped)","2024-01-09",NA,TRUE
+"38","Trilogy Long Term Care - 5th Fl","340 Mccowan Rd","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-09",NA,TRUE
+"39","Carefree Lodge - 1st Fl","306 Finch Ave E","Ltch","Respiratory","Covid-19","2024-01-08",NA,TRUE
+"40","Extendicare Guildwood - East - Spurs 2","60 Guildwood Pky","Ltch","Respiratory","Coronavirus*","2024-01-08",NA,TRUE
+"41","Glen Rouge Community - 4th Fl","92 Island Rd","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-08",NA,TRUE
+"42","Kennedy Lodge - 2 North & 2 South","1400 Kennedy Rd","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-08",NA,TRUE
+"43","One Kenton Place - 3rd Fl","1-3 Kenton Dr","Ltch","Respiratory","Covid-19","2024-01-08","2024-01-11",FALSE
+"44","Runnymede Healthcare Centre - 3w","625 Runnymede Rd","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-08","2024-01-16",FALSE
+"45","Yee Hong Centre For Geriatric Care - 2nd Fl","311 Mcnicoll Ave","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-08",NA,TRUE
+"46","Westside - 4th Fl","1145 Albion Rd","Ltch","Respiratory","Covid-19","2024-01-07","2024-01-16",FALSE
+"47","Downsview Long Term Care Centre - Unit 2e & 1 North","3595 Keele St","Ltch","Respiratory","Covid-19","2024-01-06",NA,TRUE
+"48","Isabel And Arthur Meighen Manor - 3rd Fl","155 Millwood Rd","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-06","2024-01-11",FALSE
+"49","Sunnybrook Health Sciences Centre - Sunnybrook Veterans Centre - Lsse","2075 Bayview Ave","Ltch","Respiratory","Covid-19","2024-01-06",NA,TRUE
+"50","Chartwell Scarlett Heights Retirement Residence","4005 Eglinton Ave W","Ltch","Respiratory","Covid-19","2024-01-05",NA,TRUE
+"51","Humber Meadows Long Term Care Home - 4 North & 6 South","2109 Finch Ave W","Ltch","Respiratory","Covid-19","2024-01-05",NA,TRUE
+"52","Shsc - Sunnybrook Veterans Centre - Lfsw","2075 Bayview Ave","Ltch","Enteric","Norovirus","2024-01-05","2024-01-17",FALSE
+"53","St. Bernard's Residence - 3rd Fl","685 Finch Ave W","Retirement Home","Respiratory","Covid-19","2024-01-05",NA,TRUE
+"54","Unity Health Toronto - St. Joseph's - 6g","30 The Queensway","Hospital-Acute Care","Respiratory","Covid-19","2024-01-05","2024-01-16",FALSE
+"55","Villa Colombo Homes For The Aged","40 Playfair Ave","Ltch","Respiratory","Covid-19","2024-01-05","2024-01-13",FALSE
+"56","Weston Gardens Retirement Residence - 3rd, 4th & 5th Fl","303 Queens Dr","Retirement Home","Respiratory","Covid-19","2024-01-05",NA,TRUE
+"57","Cummer Lodge - 2s","205 Cummer Ave","Ltch","Respiratory","Covid-19","2024-01-04",NA,TRUE
+"58","Fountainview Care Community - 2nd Fl Unit 2b","1800 O'connor Dr","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-04",NA,TRUE
+"59","Harold & Grace Baker Centre - Unit C","1 Northwestern Ave","Ltch","Respiratory","Respiratory Syncytial Virus","2024-01-04",NA,TRUE
+"60","Lakeside - 2nd Fl & 3rd Fl Robin House","150 Dunn Ave","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-04",NA,TRUE
+"61","Runnymede Healthcare Centre - 4w","625 Runnymede Rd","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-04","2024-01-16",FALSE
+"62","The Jewish Home For The Aged - 6gs","3560 Bathurst St","Ltch","Respiratory","Covid-19","2024-01-04","2024-01-13",FALSE
+"63","The Wexford - 2nd Fl","1860 Lawrence Ave E","Ltch","Respiratory","Covid-19","2024-01-04","2024-01-13",FALSE
+"64","Villa Colombo Homes For The Aged","40 Playfair Ave","Ltch","Respiratory","Pending","2024-01-04",NA,TRUE
+"65","Weston Gardens - Transitional Care Unit - 3rd Fl","303 Queens Dr","Ltch","Respiratory","Covid-19","2024-01-04","2024-01-11",FALSE
+"66","Belmont House - 2 East","55 Belmont St","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-03","2024-01-10",FALSE
+"67","Eatonville Care Centre","420 The East Mall","Ltch","Respiratory","Covid-19","2024-01-03",NA,TRUE
+"68","Sage Care Retirement Home - 2nd Fl D Pod & 3rd Fl D Pod","147 Elder St","Retirement Home","Respiratory","Covid-19","2024-01-03","2024-01-16",FALSE
+"69","Shepherd Lodge - 7th Fl South & 2 North","3760 Sheppard Ave East","Ltch","Respiratory","Covid-19","2024-01-03",NA,TRUE
+"70","The O'neill Centre - 5th Fl","33 Christie St","Ltch","Respiratory","Covid-19","2024-01-03","2024-01-15",FALSE
+"71","Weston Terrace Care Community - Unit 4b","2005 Lawrence Ave W","Ltch","Respiratory","Covid-19","2024-01-03","2024-01-09",FALSE
+"72","Yee Hong Centre - Scarborough Mcnicoll - 2nd, 4th & 5th Fl","2311 Mcnicoll Ave","Ltch","Respiratory","Covid-19","2024-01-03",NA,TRUE
+"73","Baycrest Hospital - H5w","3560 Bathurst St","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-02","2024-01-10",FALSE
+"74","Centre For Addiction And Mental Health - Prt7","1001 Queen St West","Hospital-Psychiatric","Respiratory","Covid-19","2024-01-02","2024-01-15",FALSE
+"75","Extendicare Bayview - East Unit","550 Cummer Ave","Ltch","Respiratory","Influenza A (Not Subtyped)","2024-01-02","2024-01-04",FALSE
+"76","Humber Valley Terrace - 1st Fl","95 Humber College Blvd","Ltch","Respiratory","Covid-19","2024-01-02","2024-01-09",FALSE
+"77","The Claremont - 3rd & 7th Fl","305 Balliol St","Retirement Home","Respiratory","Covid-19","2024-01-02",NA,TRUE
+"78","The Jewish Home For The Aged - 2gs","3560 Bathurst St","Ltch","Respiratory","Covid-19","2024-01-02","2024-01-15",FALSE
+"79","The Jewish Home For The Aged - 5ei","3560 Bathurst St","Ltch","Respiratory","Covid-19","2024-01-02","2024-01-10",FALSE
+"80","The Village Of Humber Heights - Alderwood","2245 Lawrence Ave W","Ltch","Respiratory","Covid-19","2024-01-02","2024-01-15",FALSE
+"81","Unity Health Toronto - Houses Of Providence - D3","3276 St Clair Ave E","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-02","2024-01-13",FALSE
+"82","Unity Health Toronto - Rcc Church - 4b","200 Church St","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-02","2024-01-10",FALSE
+"83","Unity Health Toronto - St. Michael's Hospital - 7ccn","30 Bond St","Hospital-Acute Care","Enteric","Clostridium Difficile","2024-01-02",NA,TRUE
+"84","West Park  Healthcare Centre - 2ec","82 Buttonwood Ave","Hospital-Chronic Care","Respiratory","Covid-19","2024-01-02","2024-01-09",FALSE
