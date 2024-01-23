@@ -42,7 +42,6 @@ generate_causative_agents <- function(n) {
 # Function to simulate data
 simulate_data <- function(n) {
   tibble(
-    #_id = 1:n,
     Institution_Name = generate_names(n),
     Institution_Address = generate_addresses(n),
     Outbreak_Setting = sample(c("LTCH", "Hospital", "Community", "School", "Other"), n, replace = TRUE),
@@ -62,7 +61,7 @@ simulated_data <- simulate_data(1067)
 simulated_data_df <- as.data.frame(simulated_data)
 
 # Select only the first 10 rows for display
-first_10_rows <- head(simulated_data_df, 40)
+first_10_rows <- head(simulated_data_df, 10)
 
 # Print the first 10 rows of the data frame using kableExtra
 first_10_rows %>%
