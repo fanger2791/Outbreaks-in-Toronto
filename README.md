@@ -17,11 +17,11 @@ The repo is structured as:
 
 ## How to Run and Reproduce
 
-Run `scripts/download_data.R` to download the raw data
-Run `scripts/simulate_data.R` to simulate what the data could look like
-Run `scripts/test_data.R` to test the data
-Run `scripts/data_cleaning.R` to generate the clean data
-Run `outputs/paper/paper.qmd` and render the quarto file to see the pdf
+1. Run `scripts/download_data.R` to download the raw data
+2. Run `scripts/simulate_data.R` to simulate what the data could look like
+3. Run `scripts/test_data.R` to test the data
+4. Run `scripts/data_cleaning.R` to generate the clean data
+5. Run `outputs/paper/paper.qmd` and render the quarto file to see the pdf
 
 ## LLM usage
 
