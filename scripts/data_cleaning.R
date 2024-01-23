@@ -40,7 +40,8 @@ data <- data %>%
          Causative1 = str_to_title(Causative1), 
          Causative2 = str_to_title(Causative2),
          DateBegan = str_to_title(DateBegan),
-         DateEnded = str_to_title(DateEnded))
+         DateEnded = str_to_title(DateEnded))%>%
+  select(-Causative2)
 
 # Add a new column for outbreak duration - Duration will be NA for ongoing outbreaks
 data$Duration <- interval(start = data$`Date Outbreak Began`, end = data$`Date Declared Over`) / ddays(1)
