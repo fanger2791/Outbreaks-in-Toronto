@@ -1,0 +1,208 @@
+---
+title: "Outbreaks in Toronto Healthcare Institutions"
+subtitle: ""
+author: 
+  - Michael Fang
+thanks: "Code and data are available at: https://github.com/fanger2791/Outbreaks-in-Toronto"
+date: today
+date-format: long
+abstract: This paper presents a comprehensive analysis of outbreak data from long-term care homes in 2023. The key finding reveals a significant correlation between outbreak durations and the type of causative agents involved. This insight is crucial for healthcare policy planning and management of future outbreaks in similar settings.
+format: pdf
+toc: true
+number-sections: true
+bibliography: references.bib
+---
+
+
+```{r}
+#| echo: false
+#| include: false
+#| warning: false
+#| message: false
+#### Workspace setup ####
+library(janitor)
+library(opendatatoronto)
+library(tidyverse)
+library(dplyr)
+library(knitr)
+library(lubridate)
+library(stringi)
+library(ggplot2)
+library(kableExtra)
+##tinytex::install_tinytex()
+
+
+```
+
+\newpage
+
+# Introduction
+
+Long-term care homes (LTCHs) and other healthcare institutions serve a pivotal role in the healthcare system, especially in catering to the needs of the elderly and those with chronic health conditions. However, these facilities are often hotspots for infectious disease outbreaks, presenting a significant challenge to public health and patient safety. In this paper, we delve into a comprehensive analysis of data pertaining to outbreaks in LTCHs and other healthcare institutions during the year 2023. Our focus is primarily on identifying the causative agents behind these outbreaks, analyzing the duration over which they persisted, and evaluating where these outbreaks occur the most. 
+
+This investigation is critical, as it sheds light on the dynamic nature of infectious diseases within LTCH and other healthcare institutions. By examining the specifics of these outbreaks, including the types of pathogens involved and their behavior in a long-term care setting, we gain valuable insights into how these diseases spread and persist. This understanding is fundamental in enhancing the quality of care provided to vulnerable populations and in devising robust preventive strategies aimed at mitigating similar incidents in the future.
+
+To facilitate a comprehensive understanding, the remainder of this paper is organized into several key sections. Firstly, we present a thorough analysis of the outbreak data, which includes a breakdown of the types of causative agents identified, the duration of each outbreak, and an assessment of the subsequent impacts. Following this, we engage in a detailed discussion of our findings, exploring their significance and the potential implications for healthcare policy and practice in LTCHs. In the final sections, we draw conclusions from our study, highlighting the key takeaways and their relevance to the broader context of public health. Additionally, we outline avenues for future research, emphasizing areas where further investigation could contribute to a deeper understanding and better management of infectious disease outbreaks in long-term care settings.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+# Load necessary libraries
+library(readr)
+library(dplyr)
+library(tidyr)
+
+# Read the CSV file
+healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+
+# Convert tibble to data frame
+healthcare_institutions_df <- as.data.frame(healthcare_institutions)
+
+# Select only the first 10 rows for display
+first_10_rows <- head(healthcare_institutions_df, 10)
+
+# Print the first 10 rows of the data frame using kableExtra
+first_10_rows %>%
+  kbl(caption = "Sample Table of Outbreaks in Toronto Healthcare Institutions") %>%
+  kable_classic(full_width = F, html_font = "Cambria") %>%
+  kable_styling(font_size = 8) %>% # Adjust font size as needed
+  column_spec(1, width = "0.6cm") %>% # Adjust column widths as needed
+  column_spec(2, width = "1.5cm") %>%
+  column_spec(3, width = "1.5cm") %>%
+  column_spec(4, width = "1.5cm") %>%
+  column_spec(5, width = "1.5cm") %>%
+  column_spec(6, width = "1.5cm") %>%
+  column_spec(9, width = "1.3cm") 
+
+```
+
+# Data {#sec-data}
+
+## Data Collection
+
+The dataset sourced from Open Data Toronto [@opendata], is a collection of data on reported outbreaks, presumably compiled by a public health department or a similar entity. The primary aim of this dataset is to monitor public health concerns, assist in policy making, and inform the public, fitting within a broader initiative by governmental or health organizations to track health-related incidents. As Gebru et al. discuss in their work on datasheets for datasets [@gebru2021datasheets], the structure and transparency of dataset documentation are crucial for effective use in research and policy development. The data in this case is structured in a way that each row represents a reported outbreak, with columns detailing identifiers, institution names and addresses, outbreak settings, types, causative agents, dates of occurrence, and the active status of each outbreak. It includes mostly categorical data, such as the types of outbreak and causative agents, and date fields for the outbreak timelines. This kind of data categorization can be pivotal in statistical analysis within R [@citeR].
+
+## Variables
+
+The dataset, comprising of key variables, offers a comprehensive picture of outbreak occurrences in Toronto. The ID serves as a unique identifier for each record, crucial for distinguishing individual outbreak events. The Name and Address variables provide critical insights into the geographical spread and institutional vulnerability to outbreaks. Specifically, analyzing these variables can reveal patterns in outbreak occurrences across different regions and institution types, highlighting areas or institutions that may be more susceptible to health crises.
+
+The Setting variable categorizes the environment of the outbreak, such as long-term care homes or schools, enabling a deeper understanding of which settings are most at risk. This is particularly important for targeted public health interventions and policy formulations. In tandem, the Type variable identifies the nature of the outbreak, like respiratory or gastrointestinal, offering insights into the prevalent types of diseases in these settings and guiding public health strategies and awareness campaigns.
+
+Crucial to understanding the spread and control of diseases is the Causative1 variable. They shed light on the pathogens or factors responsible for the outbreaks, essential for tracking specific disease spread, identifying emerging health threats, and formulating responsive strategies. The temporal variables, DateBegan and DateEnded, allow for an analysis of outbreak duration and the identification of seasonal patterns or trends, which is vital for future preparedness and preventive measures.Lastly, the Active status of each outbreak provides immediate information on current public health challenges, enabling swift responses and resource allocation to active health threats. 
+
+
+## Data Processing
+
+The process of handling and analyzing the dataset in R [@citeR] involves a comprehensive series of steps, beginning with the loading of essential libraries and culminating in the extraction of actionable insights. Initially, libraries such as tidyverse [@tidyverse] for data manipulation and visualization, lubridate [@lubridate] for handling date-time data, and stringi for string operations are loaded. These libraries provide a robust toolkit for various data processing tasks.
+
+The dataset is then read into R [@citeR] using the read_csv function from the readr package, a part of tidyverse [@tidyverse]. This function efficiently converts the CSV file into a dataframe, R's [@citeR] fundamental data structure for handling tabular data. Once loaded, the data undergoes an initial inspection using functions like head, summary, and str to understand its structure, identify any inconsistencies, missing values, or incorrect data types.
+
+Data cleaning is a crucial next step where issues identified during inspection are addressed. This may involve handling missing values, filtering out irrelevant data, or converting data into correct formats, such as using lubridate [@lubridate] to parse and format dates properly. Additionally, new variables that could provide further insights might be created from the existing data.
+
+Following the cleaning process, data transformation is performed, primarily using the dplyr [@dplyr] package. This could include grouping the data based on certain variables like Outbreak Setting and summarizing or calculating statistics for each group. Textual data, such as institution names and addresses, are manipulated as needed using stringi
+
+Finally, the processed data or the results of the analysis are exported for reporting or further use. This can be in the form of CSV files using write_csv.
+
+This entire process transforms the raw data into meaningful and actionable insights, essential for informed decision-making and policy formulation, especially in fields like public health as evident in this dataset.
+
+
+# Visualizing the Data and the Results
+
+## Distribution of Outbreaks by Setting
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+
+# Process and visualize the data focusing on Outbreak Setting
+  healthcare_institutions %>%
+    group_by(`Setting`) %>%
+    summarise(Count = n()) %>%
+    ggplot(aes(x = `Setting`, y = Count, fill = `Setting`)) +
+    geom_bar(stat = "identity") +
+    labs(title = "Outbreaks by Setting", x = "Setting", y = "Count") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+This graph is a visualization in understanding the landscape of outbreak occurrences across various environments or settings within the dataset. This chart categorizes and displays the frequency of outbreaks in distinct settings such as hospitals, long-term care homes, schools, and other community spaces. Each bar in the chart represents a different setting, with the height of the bar corresponding to the number of outbreaks recorded in that particular environment.
+
+The primary objective of this visualization is to identify which settings are most susceptible to outbreaks, providing crucial insights for public health monitoring and intervention strategies. For example, a higher bar for long-term care homes might indicate a greater vulnerability in these facilities, necessitating targeted preventive measures. Conversely, the shorter bars might suggest settings that are relatively less affected or better managed in terms of outbreak control.
+
+We can see based from this graph that Long-term care homes (LTCHs) have the highest frequency of outbreaks compared to other settings in the dataset. This trend can be attributed to several key factors such as the demographic residing in LTCHs typically comprises older adults with pre-existing health conditions, inherently more vulnerable to infections. On the other hand, we can analyze that psychiatric hospitals have the lowest number of reported outbreaks as psychiatric hospitals often have a different environment compared to general hospitals. The patient cohort typically includes individuals with mental health disorders, who may not have the same vulnerability to infectious diseases as the elderly or those with chronic physical illnesses often found in other healthcare settings such as LTCHs
+
+By clearly showing where outbreaks are most prevalent, health authorities and policymakers can better understand where to focus their efforts, whether in bolstering prevention strategies, enhancing response protocols, or directing educational resources. 
+
+## Duration Of Outbreaks By Setting
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+# Read the data directly from the CSV file
+healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+
+# Convert dates to Date type
+healthcare_institutions$`DateEnded` <- as.Date(healthcare_institutions$`DateEnded`)
+healthcare_institutions$`DateBegan` <- as.Date(healthcare_institutions$`DateBegan`)
+
+# Check if there is data available
+if (nrow(healthcare_institutions) > 0) {
+  # Calculate duration and create a box plot
+  healthcare_institutions %>%
+    filter(!is.na(`DateEnded`)) %>%
+    mutate(Duration = as.numeric(`DateEnded` - `DateBegan`)) %>%
+    ggplot(aes(x = `Setting`, y = Duration)) +
+    geom_boxplot() +
+    labs(title = "Duration of Outbreaks by Setting", x = "Setting", y = "Duration (Days)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotating x-axis labels
+} else {
+  cat("No data available in the CSV file.")
+}
+```
+
+In this plot, each box represents the spread of outbreak durations within a specific setting, such as a hospital, school, or community center. The key elements of the box plot – the median (central line within the box), the interquartile range (IQR, the box itself), and potential outliers (represented as points outside the box's whiskers) – collectively offer a concise yet comprehensive view of how long outbreaks tend to last in each setting.
+
+This plot is useful for identifying variations in outbreak durations across different environments. For instance, a longer IQR in one setting might indicate more variability in how long outbreaks last there, suggesting a need for more flexible response strategies. The median provides a quick reference to the typical duration of an outbreak in each setting, while outliers can signal exceptionally long or short outbreaks that may warrant further investigation.
+
+## Outbreaks by Setting and Causative Agent
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+
+# Process and visualize the data focusing on Outbreak Setting and Outbreak Type
+healthcare_institutions %>%
+  group_by(`Setting`, `Causative1`) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  ggplot(aes(x = `Setting`, y = Count, fill = `Causative1`)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Outbreaks by Setting and Causative Agent", x = "Setting", y = "Count of Outbreaks") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+This graph offers a visual representation of where and how frequently different types of outbreaks occur in healthcare facilities. By identifying settings with higher incidences of specific outbreaks, this graph aids in pinpointing areas that may require more infection control measures, additional resources, or targeted interventions. It can also reveal patterns or trends over time, especially when updated with new data, enabling a proactive approach to outbreak prevention and management.
+
+As we can see, most of the outbreaks that occur are due to COVID-19, and it happens mostly at LTCHs. LTCHs are home to older adults, often with underlying health conditions, making them more susceptible to severe impacts of COVID-19 due to their diminished immune responses. LTCHs frequently grapple with staffing and resource constraints. Limited staff, who sometimes work across different facilities, can inadvertently facilitate the spread of the virus. 
+
+# Conclusion
+
+In this paper, we have undertaken a comprehensive analysis of data related to outbreaks in Long-term Care Homes (LTCHs) and other healthcare institutions in Toronto during the year 2023. Our study has revealed significant insights into the nature and dynamics of these outbreaks, highlighting the causative agents, the duration of the outbreaks, and their geographical distribution.
+
+This information is crucial for informing public health policies and improving the quality of care for the elderly and those with chronic health conditions in LTCHs. As we continue to face challenges in managing infectious diseases, data-driven approaches like this will be instrumental in enhancing our preparedness and response strategies, ultimately contributing to the betterment of public health.
+
+\newpage
+
+
+# References
+
+
