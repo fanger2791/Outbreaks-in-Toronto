@@ -1,5 +1,5 @@
 ---
-title: "Outbreaks in Toronto Healthcare Institutions"
+title: "Analysis of Outbreaks in Toronto Healthcare Institutions"
 subtitle: ""
 author: 
   - Michael Fang
@@ -48,11 +48,6 @@ To facilitate a comprehensive understanding, the remainder of this paper is orga
 #| echo: false
 #| warning: false
 #| message: false
-
-# Load necessary libraries
-library(readr)
-library(dplyr)
-library(tidyr)
 
 # Read the CSV file
 healthcare_institutions <- read_csv("../data/cleaned_healthcare_data.csv")
