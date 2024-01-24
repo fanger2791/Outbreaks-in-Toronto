@@ -55,7 +55,7 @@ library(dplyr)
 library(tidyr)
 
 # Read the CSV file
-healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+healthcare_institutions <- read_csv("../data/cleaned_healthcare_data.csv")
 
 # Convert tibble to data frame
 healthcare_institutions_df <- as.data.frame(healthcare_institutions)
@@ -99,12 +99,6 @@ The process of handling and analyzing the dataset in R [@citeR] involves a compr
 
 The dataset is then read into R [@citeR] using the read_csv function from the readr package, a part of tidyverse [@tidyverse]. This function efficiently converts the CSV file into a dataframe, R's [@citeR] fundamental data structure for handling tabular data. Once loaded, the data undergoes an initial inspection using functions like head, summary, and str to understand its structure, identify any inconsistencies, missing values, or incorrect data types.
 
-Data cleaning is a crucial next step where issues identified during inspection are addressed. This may involve handling missing values, filtering out irrelevant data, or converting data into correct formats, such as using lubridate [@lubridate] to parse and format dates properly. Additionally, new variables that could provide further insights might be created from the existing data.
-
-Following the cleaning process, data transformation is performed, primarily using the dplyr [@dplyr] package. This could include grouping the data based on certain variables like Outbreak Setting and summarizing or calculating statistics for each group. Textual data, such as institution names and addresses, are manipulated as needed using stringi
-
-Finally, the processed data or the results of the analysis are exported for reporting or further use. This can be in the form of CSV files using write_csv.
-
 This entire process transforms the raw data into meaningful and actionable insights, essential for informed decision-making and policy formulation, especially in fields like public health as evident in this dataset.
 
 
@@ -117,7 +111,7 @@ This entire process transforms the raw data into meaningful and actionable insig
 #| warning: false
 #| message: false
 
-healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+healthcare_institutions <- read_csv("../data/cleaned_healthcare_data.csv")
 
 # Process and visualize the data focusing on Outbreak Setting
   healthcare_institutions %>%
@@ -146,7 +140,7 @@ By clearly showing where outbreaks are most prevalent, health authorities and po
 #| message: false
 
 # Read the data directly from the CSV file
-healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+healthcare_institutions <- read_csv("../data/cleaned_healthcare_data.csv")
 
 # Convert dates to Date type
 healthcare_institutions$`DateEnded` <- as.Date(healthcare_institutions$`DateEnded`)
@@ -178,7 +172,7 @@ This plot is useful for identifying variations in outbreak durations across diff
 #| warning: false
 #| message: false
 
-healthcare_institutions <- read_csv("/Users/michaelfang/OutbreaksToronto/outputs/data/cleaned_healthcare_data.csv")
+healthcare_institutions <- read_csv("../data/cleaned_healthcare_data.csv")
 
 # Process and visualize the data focusing on Outbreak Setting and Outbreak Type
 healthcare_institutions %>%
