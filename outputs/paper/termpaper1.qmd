@@ -159,9 +159,11 @@ if (nrow(healthcare_institutions) > 0) {
 }
 ```
 
-In this plot, each box represents the spread of outbreak durations within a specific setting, such as a hospital, school, or community center. The key elements of the box plot – the median (central line within the box), the interquartile range (IQR, the box itself), and potential outliers (represented as points outside the box's whiskers) – collectively offer a concise yet comprehensive view of how long outbreaks tend to last in each setting.
+In this plot, each box represents the spread of outbreak durations within a specific setting, such as a hospital, school, or community center. The key elements of the box plot – the median (central line within the box), the interquartile range (IQR, the box itself), and potential outliers (represented as points outside the box's whiskers) collectively offer a concise yet comprehensive view of how long outbreaks tend to last in each setting.
 
-This plot is useful for identifying variations in outbreak durations across different environments. For instance, a longer IQR in one setting might indicate more variability in how long outbreaks last there, suggesting a need for more flexible response strategies. The median provides a quick reference to the typical duration of an outbreak in each setting, while outliers can signal exceptionally long or short outbreaks that may warrant further investigation.
+This plot is useful for identifying variations in outbreak durations across different environments. For instance, a longer IQR in one setting might indicate more variability in how long outbreaks last there, suggesting a need for more flexible response strategies. The median provides a quick reference to the typical duration of an outbreak in each setting, while outliers can signal exceptionally long or short outbreaks.
+
+From this graph we can interpret the following results. For Hospital-Chronic Care we can see that he median outbreak duration is around 7 days with the IQR is decently long, suggesting variability in outbreak duration. Compare this to LTCH, the median is similar but the IQR is slightly larger, suggesting more variability in outbreak duration. We can also see that for retirement homes, the median is the highest among the settings, indicating that outbreaks tend to last longer in retirement homes. Retirement homes not only tend to experience longer durations of outbreaks compared to hospital settings, but also greater variability in those durations. Acute care hospitals seem to have the most controlled outbreak durations, with less variability and a lower median duration
 
 ## Outbreaks by Setting and Causative Agent
 
@@ -184,7 +186,7 @@ healthcare_institutions %>%
 ```
 This graph offers a visual representation of where and how frequently different types of outbreaks occur in healthcare facilities. By identifying settings with higher incidences of specific outbreaks, this graph aids in pinpointing areas that may require more infection control measures, additional resources, or targeted interventions. It can also reveal patterns or trends over time, especially when updated with new data, enabling a proactive approach to outbreak prevention and management.
 
-As we can see, most of the outbreaks that occur are due to COVID-19, and it happens mostly at LTCHs. LTCHs are home to older adults, often with underlying health conditions, making them more susceptible to severe impacts of COVID-19 due to their diminished immune responses. LTCHs frequently grapple with staffing and resource constraints. Limited staff, who sometimes work across different facilities, can inadvertently facilitate the spread of the virus. 
+As we can see, most of the outbreaks that occur are due to COVID-19 [@covid19], and it happens mostly at LTCHs. LTCHs are home to older adults, often with underlying health conditions, making them more susceptible to severe impacts of COVID-19 due to their diminished immune responses. LTCHs frequently grapple with staffing and resource constraints. Limited staff, who sometimes work across different facilities, can inadvertently facilitate the spread of the virus [@covid19]. 
 
 # Conclusion
 
