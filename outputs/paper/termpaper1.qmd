@@ -190,9 +190,9 @@ As we can see, most of the outbreaks that occur are due to COVID-19 [@covid19], 
 
 # Conclusion
 
-In this paper, we have undertaken a comprehensive analysis of data related to outbreaks in Long-term Care Homes (LTCHs) and other healthcare institutions in Toronto during the year 2023. Our study has revealed significant insights into the nature and dynamics of these outbreaks, highlighting the causative agents, the duration of the outbreaks, and their geographical distribution.
+In this paper, we have undertaken a comprehensive analysis of data related to outbreaks in Long-term Care Homes (LTCHs) and other healthcare institutions in Toronto during the year 2023. Using the dataset sourced from Open Data Toronto [@opendata], Our study has revealed significant insights into the nature and dynamics of these outbreaks, highlighting the causative agents, the duration of the outbreaks, and their geographical distribution.
 
-This information is crucial for informing public health policies and improving the quality of care for the elderly and those with chronic health conditions in LTCHs. As we continue to face challenges in managing infectious diseases, data-driven approaches like this will be instrumental in enhancing our preparedness and response strategies, ultimately contributing to the betterment of public health.
+This information is crucial for informing public health policies and improving the quality of care for the elderly and those with chronic health conditions in LTCHs and other healthcare institutions. As we continue to face challenges in managing infectious diseases, data-driven approaches like this will be instrumental in enhancing our preparedness and response strategies, ultimately contributing to the betterment of public health.
 
 \newpage
 
