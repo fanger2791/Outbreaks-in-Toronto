@@ -42,7 +42,7 @@ Long-term care homes (LTCHs) and other healthcare institutions serve a pivotal r
 
 This investigation is critical, as it sheds light on the dynamic nature of infectious diseases within LTCH and other healthcare institutions. By examining the specifics of these outbreaks, including the types of pathogens involved and their behavior in a long-term care setting, we gain valuable insights into how these diseases spread and persist. This understanding is fundamental in enhancing the quality of care provided to vulnerable populations and in devising robust preventive strategies aimed at mitigating similar incidents in the future.
 
-To facilitate a comprehensive understanding, the remainder of this paper is organized into several key sections. Firstly, we present a thorough analysis of the outbreak data, which includes a breakdown how the data was collected and simulated. We then dive into how the variables used came to be and their importance, and then discuss how the data was processed. We then engage in a detailed discussion of our findings, exploring their significance and the potential implications for healthcare policy and practice in LTCHs and other healthcare institutions with various graphs. In the final sections, we draw conclusions from our study, highlighting the key takeaways and their relevance to the broader context of public health.=
+To facilitate a comprehensive understanding, the remainder of this paper is organized into several key sections. Firstly, we present a thorough analysis of the outbreak data, which includes a breakdown how the data was collected and simulated. We then dive into how the variables used came to be and their importance, and then discuss how the data was processed. We then engage in a detailed discussion of our findings, exploring their significance and the potential implications for healthcare policy and practice in LTCHs and other healthcare institutions with various graphs. In the final sections, we draw conclusions from our study, highlighting the key takeaways and their relevance to the broader context of public health.
 
 ```{r}
 #| echo: false
@@ -180,7 +180,7 @@ healthcare_institutions %>%
   summarise(Count = n(), .groups = 'drop') %>%
   ggplot(aes(x = `Setting`, y = Count, fill = `Causative1`)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Outbreaks by Setting and Causative Agent", x = "Setting", y = "Count of Outbreaks") +
+  labs(title = "Outbreaks by Setting and Causative", x = "Setting", y = "Count of Outbreaks") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
