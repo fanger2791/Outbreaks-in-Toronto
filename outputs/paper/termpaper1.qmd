@@ -42,7 +42,7 @@ Long-term care homes (LTCHs) and other healthcare institutions serve a pivotal r
 
 This investigation is critical, as it sheds light on the dynamic nature of infectious diseases within LTCH and other healthcare institutions. By examining the specifics of these outbreaks, including the types of pathogens involved and their behavior in a long-term care setting, we gain valuable insights into how these diseases spread and persist. This understanding is fundamental in enhancing the quality of care provided to vulnerable populations and in devising robust preventive strategies aimed at mitigating similar incidents in the future.
 
-To facilitate a comprehensive understanding, the remainder of this paper is organized into several key sections. Firstly, we present a thorough analysis of the outbreak data, which includes a breakdown of the types of causative agents identified, the duration of each outbreak, and an assessment of the subsequent impacts. Following this, we engage in a detailed discussion of our findings, exploring their significance and the potential implications for healthcare policy and practice in LTCHs. In the final sections, we draw conclusions from our study, highlighting the key takeaways and their relevance to the broader context of public health. Additionally, we outline avenues for future research, emphasizing areas where further investigation could contribute to a deeper understanding and better management of infectious disease outbreaks in long-term care settings.
+To facilitate a comprehensive understanding, the remainder of this paper is organized into several key sections. Firstly, we present a thorough analysis of the outbreak data, which includes a breakdown how the data was collected and simulated. We then dive into how the variables used came to be and their importance, and then discuss how the data was processed. We then engage in a detailed discussion of our findings, exploring their significance and the potential implications for healthcare policy and practice in LTCHs and other healthcare institutions with various graphs. In the final sections, we draw conclusions from our study, highlighting the key takeaways and their relevance to the broader context of public health.=
 
 ```{r}
 #| echo: false
@@ -95,11 +95,9 @@ Crucial to understanding the spread and control of diseases is the Causative1 va
 
 ## Data Processing
 
-The process of handling and analyzing the dataset in R [@citeR] involves a comprehensive series of steps, beginning with the loading of essential libraries and culminating in the extraction of actionable insights. Initially, libraries such as tidyverse [@tidyverse] for data manipulation and visualization, lubridate [@lubridate] for handling date-time data, and stringi for string operations are loaded. These libraries provide a robust toolkit for various data processing tasks.
+The process of handling and analyzing the dataset in R [@citeR] involves a comprehensive series of steps, beginning with the loading of essential libraries and culminating in the extraction of actionable insights. Initially, libraries such as tidyverse [@tidyverse] for data manipulation and visualization, lubridate [@lubridate] for handling date-time data, and stringi [@stringi] for string operations are loaded. These libraries provide a robust toolkit for various data processing tasks.
 
-The dataset is then read into R [@citeR] using the read_csv function from the readr package, a part of tidyverse [@tidyverse]. This function efficiently converts the CSV file into a dataframe, R's [@citeR] fundamental data structure for handling tabular data. Once loaded, the data undergoes an initial inspection using functions like head, summary, and str to understand its structure, identify any inconsistencies, missing values, or incorrect data types.
-
-This entire process transforms the raw data into meaningful and actionable insights, essential for informed decision-making and policy formulation, especially in fields like public health as evident in this dataset.
+The dataset is then read into R [@citeR] using the read_csv function from the readr package, a part of tidyverse [@tidyverse]. This function efficiently converts the CSV file into a dataframe, R's [@citeR] fundamental data structure for handling tabular data. This entire process transforms the raw data into meaningful and actionable insights, essential for informed decision-making and policy formulation, especially in fields like public health as evident in this dataset.
 
 
 # Visualizing the Data and the Results
